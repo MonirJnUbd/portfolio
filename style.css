@@ -318,11 +318,12 @@ img {
 }
 
 .hero-image {
-    border-radius: 24px;
-    width: 100%;
+        width: 70%;
+    max-width: 320px;
     aspect-ratio: 4/5;
     object-fit: cover;
-    filter: grayscale(20%) contrast(110%);
+    border-radius: 24px;
+    margin: 0 auto;
 }
 
 /* ==========================================================================
