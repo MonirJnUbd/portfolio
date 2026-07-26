@@ -662,3 +662,116 @@ img {
     .timeline-item { padding-left: 3rem; }
     :root { --section-padding: 4rem; }
 }
+
+
+/* ===============================
+   Trusted Organizations
+================================ */
+
+.logo-slider{
+
+    overflow:hidden;
+
+    position:relative;
+
+    margin-top:60px;
+
+    mask-image: linear-gradient(to right,
+    transparent,
+    white 10%,
+    white 90%,
+    transparent);
+
+}
+
+.logo-track{
+
+    display:flex;
+
+    width:max-content;
+
+    animation:scroll 28s linear infinite;
+
+}
+
+.logo-slider:hover .logo-track{
+
+    animation-play-state:paused;
+
+}
+
+.logo-item{
+
+    width:240px;
+
+    height:120px;
+
+    margin:0 20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(16px);
+
+    transition:.4s;
+
+}
+
+.logo-item:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#06B6D4;
+
+}
+
+.logo-item img{
+
+    max-width:150px;
+
+    max-height:70px;
+
+    object-fit:contain;
+
+    filter:grayscale(100%);
+
+    opacity:.65;
+
+    transition:.4s;
+
+}
+
+.logo-item:hover img{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:scale(1.08);
+
+}
+
+@keyframes scroll{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
